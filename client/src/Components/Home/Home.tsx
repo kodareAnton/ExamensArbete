@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 export function Home() {
@@ -30,8 +31,9 @@ export function Home() {
               Create an account so you can save your favorite games and easy
               keep track on what new patchnotes and events thats coming up.{' '}
             </p>
-            <button onClick={navigateToLogin}>Login</button>
-            <button onClick={navigateToGames}>Games</button>
+            <Link to={'/Login'}><button>Login</button></Link>
+            <Link to={'/PAge_one'}><button>Games</button></Link>
+
           </div>
         </div>
       </>
